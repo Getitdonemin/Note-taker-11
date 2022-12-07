@@ -33,7 +33,7 @@ app.get("/", function (req, res) {
 app.get("/notes", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/notes.html"));
 })
-=
+
 // Making the GET, POST, and DELETE API EndpointsGET
 
 // Making Get and POST since they are both coming from the same server

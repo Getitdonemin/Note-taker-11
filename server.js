@@ -75,3 +75,32 @@ app.route("/api/notes")
         // Lastly taking the response to User's new note
         res.json(newNote);
     });
+
+    // Making delete api endpoint
+app.delete("/api/notes/:id", function (req, res) {
+    let jsonFilePath = path.join(__dirname, "/db/db.json");
+    // requesting to delete through id
+    for (let i = 0; i < database.length; i++) {
+
+        if (database[i].id == req.params.id) {
+            // with splice we take the i varaible position which then deletes the note
+            database.splice(i, 1);
+            break;
+        }
+    }
+    // db.json file
+    fs.writeFileSync(jsonFilePath, JSON.stringify(database), function (err) {
+
+        if (err) {
+            return console.log(err);
+        } else {
+            console.log("Your note was deleted!");
+        }
+    });
+    res.json(database);
+});
+
+//server set up
+app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
+});

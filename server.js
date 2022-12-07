@@ -70,7 +70,7 @@ app.route("/api/notes")
             if (err) {
                 return console.log(err);
             }
-            console.log("Your note was saved!");
+            console.log("Notes Saved");
         });
         // Lastly taking the response to User's new note
         res.json(newNote);
@@ -94,7 +94,7 @@ app.delete("/api/notes/:id", function (req, res) {
         if (err) {
             return console.log(err);
         } else {
-            console.log("Your note was deleted!");
+            console.log("Notes deleted");
         }
     });
     res.json(database);

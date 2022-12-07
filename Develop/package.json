@@ -1,14 +1,29 @@
 {
-    "name": "note-taker",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "express": "^4.16.4"
-    }
+  "name": "note-taker-11",
+  "version": "1.0.0",
+  "description": "Application for notes that can save and delete",
+  "main": "./Develop/public/assets/js/index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Getitdonemin/NoteTaker-11"
+  },
+  "keywords": [
+    "application",
+    "mysql",
+    "express",
+    "note",
+    "taker",
+    "coding",
+    "bootcamp"
+  ],
+  "author": "John Kim",
+  "homepage": "https://github.com/Getitdonemin/NoteTaker-11/blob/main/README.md",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^25.1.0",
+    "mysql": "^2.18.0"
   }
+}

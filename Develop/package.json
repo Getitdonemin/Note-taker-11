@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Getitdonemin/NoteTaker-11"
+    "url": "git+https://github.com/Getitdonemin/NoteTaker-Master"
   },
   "keywords": [
     "application",
@@ -20,7 +20,7 @@
     "bootcamp"
   ],
   "author": "John Kim",
-  "homepage": "https://github.com/Getitdonemin/NoteTaker-11/blob/main/README.md",
+  "homepage": "https://github.com/Getitdonemin/NoteTaker-Master",
   "dependencies": {
     "express": "^4.17.1",
     "jest": "^25.1.0",

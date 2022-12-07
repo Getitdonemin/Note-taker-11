@@ -1,0 +1,32 @@
+{
+    "name": "Note Taker Master",
+    "description": "Application that has the ability to take, retrieve, and delete notes",
+    "keywords": [
+        "productivity",
+        "express",
+        "bootcamp",
+        "node",
+        "notes"
+    ],
+    "website": "null",
+    "repository": "https://github.com/Getitdonemin/NoteTaker-Master",
+    "success_url": "/",
+    "formation": {
+        "web": {
+            "quantity": 2,
+            "size": "Performance-M"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+        }
+    ],
+    "environments": {
+        "test": {
+            "scripts": {
+                "test": "jest"
+            }
+        }
+    }
+}
